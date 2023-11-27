@@ -83,7 +83,7 @@ class loginpage extends StatelessWidget {
                       prefixIcon: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Icon(
-                          Icons.panorama_fish_eye,
+                          Icons.remove_red_eye_rounded,
                           color: Colors.white,
                           size: 25,
                         ),
