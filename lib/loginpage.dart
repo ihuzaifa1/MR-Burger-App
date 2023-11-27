@@ -36,6 +36,40 @@ class loginpage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 25),
               child: Column(children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 17),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade600.withOpacity(0.5),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        contentPadding:
+                            const EdgeInsets.symmetric(vertical: 20),
+                        border: InputBorder.none,
+                        hintText: 'Email',
+                        prefixIcon: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20),
+                          child: Icon(
+                            Icons.email_rounded,
+                            color: Colors.white,
+                            size: 25,
+                          ),
+                        ),
+                        hintStyle: TextStyle(fontSize: 19, color: Colors.white),
+                      ),
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.next,
+                    ),
+                  ),
+                )
+              ]),
+            ),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 25),
+              child: Column(children: [
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey.shade600.withOpacity(0.5),
@@ -45,11 +79,11 @@ class loginpage extends StatelessWidget {
                     decoration: InputDecoration(
                       contentPadding: const EdgeInsets.symmetric(vertical: 20),
                       border: InputBorder.none,
-                      hintText: 'Email',
+                      hintText: 'Password',
                       prefixIcon: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Icon(
-                          Icons.email_rounded,
+                          Icons.panorama_fish_eye,
                           color: Colors.white,
                           size: 25,
                         ),
@@ -57,6 +91,8 @@ class loginpage extends StatelessWidget {
                       hintStyle: TextStyle(fontSize: 19, color: Colors.white),
                     ),
                     style: TextStyle(fontSize: 18, color: Colors.white),
+                    keyboardType: TextInputType.emailAddress,
+                    textInputAction: TextInputAction.next,
                   ),
                 )
               ]),
