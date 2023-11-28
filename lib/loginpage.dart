@@ -69,7 +69,8 @@ class loginpage extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 25),
-              child: Column(children: [
+              child:
+                  Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.grey.shade600.withOpacity(0.5),
@@ -83,7 +84,7 @@ class loginpage extends StatelessWidget {
                       prefixIcon: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20),
                         child: Icon(
-                          Icons.remove_red_eye_rounded,
+                          Icons.lock,
                           color: Colors.white,
                           size: 25,
                         ),
@@ -91,8 +92,15 @@ class loginpage extends StatelessWidget {
                       hintStyle: TextStyle(fontSize: 19, color: Colors.white),
                     ),
                     style: TextStyle(fontSize: 18, color: Colors.white),
-                    keyboardType: TextInputType.emailAddress,
-                    textInputAction: TextInputAction.next,
+                    obscureText: true,
+                    textInputAction: TextInputAction.done,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Forgot Password",
+                    style: TextStyle(fontSize: 15, color: Colors.white),
                   ),
                 )
               ]),
